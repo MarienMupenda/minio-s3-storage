@@ -12,14 +12,8 @@ services:
       - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
     volumes:
       - minio_data:/data
-    networks:
-      - internal
-networks:
-  internal:
-    external: false
-    name: internal
 volumes:
     minio_data:
         driver: local
-    
+
   
